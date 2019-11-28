@@ -11,34 +11,37 @@
 </div>
 <% end %>
 
-<div class="form-group">
-  <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title %>
+
+<div style="margin-left: 30px">
+  <div class="form-group">
+    <div class="field">
+      <%= form.label :title %>
+      <%= form.text_field :title %>
+    </div>
   </div>
-</div>
-<div class="field">
-  <%= form.label :category %>
-  <%= form.select :category, $categorias %>
-</div>
+  <div class="field">
+    <%= form.label :category %>
+    <%= form.select :category, $categorias %>
+  </div>
 
-<div class="field">
-  <%= form.label :link %>
-  <%= form.text_field :link %>
-</div>
+  <div class="field">
+    <%= form.label :link %>
+    <%= form.text_field :link %>
+  </div>
 
-<div class="field">
-  <%= form.label :description %>
-  <%= form.text_area :description %>
-</div>
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_area :description %>
+  </div>
 
-<div class="actions">
-  <% if request.fullpath == "/memes/new" %>
-  <button type="submit" class="btn btn-primary">Create Meme</button>
-  <%else%>
-  <button type="submit" class="btn btn-primary">Edit</button>
-  <% end %>
-  <a class="btn btn-primary" href="/memes" style="color: white;">Back</a>
+  <div class="actions">
+    <% if request.fullpath == "/memes/new" %>
+    <button type="submit" class="btn btn-primary">Create Meme</button>
+    <%else%>
+    <button type="submit" class="btn btn-primary">Edit</button>
+    <% end %>
+    <a class="btn btn-primary" href="/memes" style="color: white;">Back</a>
+  </div>
 </div>
 
 <% end %>

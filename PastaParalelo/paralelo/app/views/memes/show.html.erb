@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @meme.title %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @meme.category %>
+</p>
+
+<p>
+  <strong>Link:</strong>
+  <%= @meme.link %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @meme.description %>
+</p>
+
+<%= link_to 'Edit', edit_meme_path(@meme) %> |
+<%= link_to 'Back', memes_path %>

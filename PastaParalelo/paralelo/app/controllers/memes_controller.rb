@@ -1,6 +1,8 @@
 class MemesController < ApplicationController
   before_action :set_meme, only: [:show, :edit, :update, :destroy]
 
+  $categorias = ["ABC", "QWERT"]
+
   # GET /memes
   # GET /memes.json
   def index
@@ -10,15 +12,18 @@ class MemesController < ApplicationController
   # GET /memes/1
   # GET /memes/1.json
   def show
+    $categorias
   end
 
   # GET /memes/new
   def new
     @meme = Meme.new
+    $categorias
   end
 
   # GET /memes/1/edit
   def edit
+    $categorias
   end
 
   # POST /memes

@@ -20,7 +20,7 @@
       <tr>
         <td><%= meme.title %></td>
         <td><%= meme.category %></td>
-        <td><%= meme.link %></td>
+        <td><img src="<%= meme.link %>" alt="" style="width: 50px; height: 50px; border: 2px solid black;"></td>
         <td><%= meme.description %></td>
         <td><%= link_to 'Show', meme %></td>
         <td><%= link_to 'Edit', edit_meme_path(meme) %></td>
@@ -35,3 +35,4 @@
 
 <button type="button" class="btn btn-primary">Primary</button>
 <%= link_to 'New Meme', new_meme_path %>
+

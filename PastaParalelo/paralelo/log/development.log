@@ -1341,3 +1341,27 @@ Entrypoint application = js/application-0b67a3cc2fcde6055024.js js/application-0
 Completed 200 OK in 7246ms (Views: 7241.4ms | ActiveRecord: 0.4ms | Allocations: 19710)
 
 
+Started GET "/memes" for ::1 at 2019-11-28 13:40:39 -0300
+  [1m[35m (5.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MemesController#index as HTML
+  Rendering memes/index.html.erb within layouts/application
+  Rendered layouts/_bootstrap.html.erb (Duration: 0.3ms | Allocations: 89)
+  [1m[36mMeme Load (0.3ms)[0m  [1m[34mSELECT "memes".* FROM "memes"[0m
+  ↳ app/views/memes/index.html.erb:19
+  Rendered memes/index.html.erb within layouts/application (Duration: 52.0ms | Allocations: 6471)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 129ms (Views: 109.8ms | ActiveRecord: 1.2ms | Allocations: 16857)
+
+
+Started GET "/memes/new" for ::1 at 2019-11-28 14:15:18 -0300
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MemesController#new as HTML
+  Rendering memes/new.html.erb within layouts/application
+  Rendered memes/_form.html.erb (Duration: 18.5ms | Allocations: 3354)
+  Rendered memes/new.html.erb within layouts/application (Duration: 21.4ms | Allocations: 3831)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1951ms (Views: 1933.0ms | ActiveRecord: 1.1ms | Allocations: 35414)
+
+

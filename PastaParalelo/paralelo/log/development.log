@@ -633,3 +633,711 @@ app/views/layouts/application.html.erb:16: syntax error, unexpected '<'
 app/views/layouts/application.html.erb:19: unterminated regexp meets end of file
 app/views/layouts/application.html.erb:19: syntax error, unexpected end-of-input, expecting ')'
 Started POST "/__web_console/repl_sessions/fb0c5250df3fc167657f609214803990/trace" for ::1 at 2019-11-28 11:59:25 -0300
+Started GET "/" for ::1 at 2019-11-28 13:26:36 -0300
+  [1m[35m (5.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/youse/.rvm/gems/ruby-2.6.3/gems/railties-6.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/youse/.rvm/gems/ruby-2.6.3/gems/railties-6.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 11.7ms | Allocations: 481)
+Completed 200 OK in 35ms (Views: 22.1ms | ActiveRecord: 0.0ms | Allocations: 2791)
+
+
+Started GET "/memes" for ::1 at 2019-11-28 13:26:45 -0300
+Processing by MemesController#index as HTML
+  Rendering memes/index.html.erb within layouts/application
+  Rendered layouts/_bootstrap.html.erb (Duration: 2.2ms | Allocations: 89)
+  [1m[36mMeme Load (1.7ms)[0m  [1m[34mSELECT "memes".* FROM "memes"[0m
+  ↳ app/views/memes/index.html.erb:19
+  Rendered memes/index.html.erb within layouts/application (Duration: 30.9ms | Allocations: 6192)
+Completed 500 Internal Server Error in 64ms (ActiveRecord: 3.2ms | Allocations: 11757)
+
+
+Started GET "/memes" for ::1 at 2019-11-28 13:26:50 -0300
+Processing by MemesController#index as HTML
+  Rendering memes/index.html.erb within layouts/application
+  Rendered layouts/_bootstrap.html.erb (Duration: 0.1ms | Allocations: 6)
+  [1m[36mMeme Load (0.6ms)[0m  [1m[34mSELECT "memes".* FROM "memes"[0m
+  ↳ app/views/memes/index.html.erb:19
+  Rendered memes/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 827)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.6ms | Allocations: 2224)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+<%= render '/
+<head>
+    <title>Paralelo</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
+
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:    <%= render '/
+4:    <head>
+5:        <title>Paralelo</title>
+6:        <%= csrf_meta_tags %>
+7:        <%= csp_meta_tag %>
+8:    
+9:        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+10:        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+11:      </head>
+12:    
+13:      <body>
+14:        <%= yield %>
+15:      </body>
+16:    </html>
+  
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:15: unknown regexp options - bdy
+app/views/layouts/application.html.erb:16: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:19: unterminated regexp meets end of file
+app/views/layouts/application.html.erb:19: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:15: unknown regexp options - bdy
+app/views/layouts/application.html.erb:16: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:19: unterminated regexp meets end of file
+app/views/layouts/application.html.erb:19: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:15: unknown regexp options - bdy
+app/views/layouts/application.html.erb:16: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:19: unterminated regexp meets end of file
+app/views/layouts/application.html.erb:19: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:15: unknown regexp options - bdy
+app/views/layouts/application.html.erb:16: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:19: unterminated regexp meets end of file
+app/views/layouts/application.html.erb:19: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:15: unknown regexp options - bdy
+app/views/layouts/application.html.erb:16: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:19: unterminated regexp meets end of file
+app/views/layouts/application.html.erb:19: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:15: unknown regexp options - bdy
+app/views/layouts/application.html.erb:16: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:19: unterminated regexp meets end of file
+app/views/layouts/application.html.erb:19: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/memes" for ::1 at 2019-11-28 13:29:00 -0300
+Processing by MemesController#index as HTML
+  Rendering memes/index.html.erb within layouts/application
+  Rendered layouts/_bootstrap.html.erb (Duration: 0.1ms | Allocations: 6)
+  [1m[36mMeme Load (0.3ms)[0m  [1m[34mSELECT "memes".* FROM "memes"[0m
+  ↳ app/views/memes/index.html.erb:19
+  Rendered memes/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 847)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.3ms | Allocations: 2265)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+<%= render '/
+<head>
+    <title>Paralelo</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
+
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:    <%= render '/
+4:    <head>
+5:        <title>Paralelo</title>
+6:        <%= csrf_meta_tags %>
+7:        <%= csp_meta_tag %>
+8:    
+9:        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+10:        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+11:      </head>
+12:    
+13:      <body>
+14:        <%= yield %>
+15:      </body>
+16:    </html>
+  
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:15: unknown regexp options - bdy
+app/views/layouts/application.html.erb:16: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:19: unterminated regexp meets end of file
+app/views/layouts/application.html.erb:19: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:15: unknown regexp options - bdy
+app/views/layouts/application.html.erb:16: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:19: unterminated regexp meets end of file
+app/views/layouts/application.html.erb:19: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:15: unknown regexp options - bdy
+app/views/layouts/application.html.erb:16: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:19: unterminated regexp meets end of file
+app/views/layouts/application.html.erb:19: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:15: unknown regexp options - bdy
+app/views/layouts/application.html.erb:16: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:19: unterminated regexp meets end of file
+app/views/layouts/application.html.erb:19: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:15: unknown regexp options - bdy
+app/views/layouts/application.html.erb:16: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:19: unterminated regexp meets end of file
+app/views/layouts/application.html.erb:19: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:15: unknown regexp options - bdy
+app/views/layouts/application.html.erb:16: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:19: unterminated regexp meets end of file
+app/views/layouts/application.html.erb:19: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/memes" for ::1 at 2019-11-28 13:30:58 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MemesController#index as HTML
+  Rendering memes/index.html.erb within layouts/application
+  Rendered layouts/_bootstrap.html.erb (Duration: 1.3ms | Allocations: 89)
+  [1m[36mMeme Load (1.6ms)[0m  [1m[34mSELECT "memes".* FROM "memes"[0m
+  ↳ app/views/memes/index.html.erb:19
+  Rendered memes/index.html.erb within layouts/application (Duration: 14.9ms | Allocations: 6304)
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 2.3ms | Allocations: 12029)
+
+
+Started GET "/memes" for ::1 at 2019-11-28 13:31:01 -0300
+Processing by MemesController#index as HTML
+  Rendering memes/index.html.erb within layouts/application
+  Rendered layouts/_bootstrap.html.erb (Duration: 0.1ms | Allocations: 6)
+  [1m[36mMeme Load (0.3ms)[0m  [1m[34mSELECT "memes".* FROM "memes"[0m
+  ↳ app/views/memes/index.html.erb:19
+  Rendered memes/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 827)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.3ms | Allocations: 2224)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+<%= render '/
+<head>
+    <title>Paralelo</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
+
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:    <%= render '/
+4:    <head>
+5:        <title>Paralelo</title>
+6:        <%= csrf_meta_tags %>
+7:        <%= csp_meta_tag %>
+8:    
+9:        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+10:        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+11:      </head>
+12:    
+13:      <body>
+14:        <%= yield %>
+15:      </body>
+16:    </html>
+  
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:15: unknown regexp options - bdy
+app/views/layouts/application.html.erb:16: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:19: unterminated regexp meets end of file
+app/views/layouts/application.html.erb:19: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:15: unknown regexp options - bdy
+app/views/layouts/application.html.erb:16: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:19: unterminated regexp meets end of file
+app/views/layouts/application.html.erb:19: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:15: unknown regexp options - bdy
+app/views/layouts/application.html.erb:16: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:19: unterminated regexp meets end of file
+app/views/layouts/application.html.erb:19: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:15: unknown regexp options - bdy
+app/views/layouts/application.html.erb:16: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:19: unterminated regexp meets end of file
+app/views/layouts/application.html.erb:19: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:15: unknown regexp options - bdy
+app/views/layouts/application.html.erb:16: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:19: unterminated regexp meets end of file
+app/views/layouts/application.html.erb:19: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:15: unknown regexp options - bdy
+app/views/layouts/application.html.erb:16: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:19: unterminated regexp meets end of file
+app/views/layouts/application.html.erb:19: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/memes" for ::1 at 2019-11-28 13:32:54 -0300
+Processing by MemesController#index as HTML
+  Rendering memes/index.html.erb within layouts/application
+  Rendered layouts/_bootstrap.html.erb (Duration: 0.3ms | Allocations: 6)
+  [1m[36mMeme Load (0.4ms)[0m  [1m[34mSELECT "memes".* FROM "memes"[0m
+  ↳ app/views/memes/index.html.erb:19
+  Rendered memes/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 853)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.4ms | Allocations: 2271)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+<%= render '/
+<head>
+    <title>Paralelo</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
+
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:    <%= render '/
+4:    <head>
+5:        <title>Paralelo</title>
+6:        <%= csrf_meta_tags %>
+7:        <%= csp_meta_tag %>
+8:    
+9:        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+10:        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+11:      </head>
+12:    
+13:      <body>
+14:        <%= yield %>
+15:      </body>
+16:    </html>
+  
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:15: unknown regexp options - bdy
+app/views/layouts/application.html.erb:16: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:19: unterminated regexp meets end of file
+app/views/layouts/application.html.erb:19: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:15: unknown regexp options - bdy
+app/views/layouts/application.html.erb:16: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:19: unterminated regexp meets end of file
+app/views/layouts/application.html.erb:19: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:15: unknown regexp options - bdy
+app/views/layouts/application.html.erb:16: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:19: unterminated regexp meets end of file
+app/views/layouts/application.html.erb:19: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:15: unknown regexp options - bdy
+app/views/layouts/application.html.erb:16: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:19: unterminated regexp meets end of file
+app/views/layouts/application.html.erb:19: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:15: unknown regexp options - bdy
+app/views/layouts/application.html.erb:16: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:19: unterminated regexp meets end of file
+app/views/layouts/application.html.erb:19: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:15: unknown regexp options - bdy
+app/views/layouts/application.html.erb:16: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:19: unterminated regexp meets end of file
+app/views/layouts/application.html.erb:19: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/memes" for ::1 at 2019-11-28 13:33:04 -0300
+Processing by MemesController#index as HTML
+  Rendering memes/index.html.erb within layouts/application
+  Rendered layouts/_bootstrap.html.erb (Duration: 0.1ms | Allocations: 6)
+  [1m[36mMeme Load (0.3ms)[0m  [1m[34mSELECT "memes".* FROM "memes"[0m
+  ↳ app/views/memes/index.html.erb:19
+  Rendered memes/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 817)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.3ms | Allocations: 2207)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+<%= render '/
+<head>
+    <title>Paralelo</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
+
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:    <%= render '/
+4:    <head>
+5:        <title>Paralelo</title>
+6:        <%= csrf_meta_tags %>
+7:        <%= csp_meta_tag %>
+8:    
+9:        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+10:        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+11:      </head>
+12:    
+13:      <body>
+14:        <%= yield %>
+15:      </body>
+16:    </html>
+  
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:15: unknown regexp options - bdy
+app/views/layouts/application.html.erb:16: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:19: unterminated regexp meets end of file
+app/views/layouts/application.html.erb:19: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:15: unknown regexp options - bdy
+app/views/layouts/application.html.erb:16: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:19: unterminated regexp meets end of file
+app/views/layouts/application.html.erb:19: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:15: unknown regexp options - bdy
+app/views/layouts/application.html.erb:16: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:19: unterminated regexp meets end of file
+app/views/layouts/application.html.erb:19: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:15: unknown regexp options - bdy
+app/views/layouts/application.html.erb:16: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:19: unterminated regexp meets end of file
+app/views/layouts/application.html.erb:19: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:15: unknown regexp options - bdy
+app/views/layouts/application.html.erb:16: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:19: unterminated regexp meets end of file
+app/views/layouts/application.html.erb:19: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:10: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:15: unknown regexp options - bdy
+app/views/layouts/application.html.erb:16: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:19: unterminated regexp meets end of file
+app/views/layouts/application.html.erb:19: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/memes" for ::1 at 2019-11-28 13:34:02 -0300
+Processing by MemesController#index as HTML
+  Rendering memes/index.html.erb within layouts/application
+  Rendered layouts/_bootstrap.html.erb (Duration: 0.5ms | Allocations: 86)
+  [1m[36mMeme Load (0.4ms)[0m  [1m[34mSELECT "memes".* FROM "memes"[0m
+  ↳ app/views/memes/index.html.erb:19
+  Rendered memes/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 1348)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/youse/Documents/AppTeste/PastaParalelo/paralelo/public/packs
+[Webpacker] Hash: 53154d7baad00c6a1252
+Version: webpack 4.41.2
+Time: 2714ms
+Built at: 28/11/2019 14:34:09
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-0b67a3cc2fcde6055024.js    124 KiB  application  [emitted] [immutable]  application
+js/application-0b67a3cc2fcde6055024.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-0b67a3cc2fcde6055024.js js/application-0b67a3cc2fcde6055024.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 749 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 7246ms (Views: 7241.4ms | ActiveRecord: 0.4ms | Allocations: 19710)
+
+

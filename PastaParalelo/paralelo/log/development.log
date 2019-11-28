@@ -4237,3 +4237,80 @@ Processing by MemesController#home as HTML
 Completed 200 OK in 85ms (Views: 73.6ms | ActiveRecord: 0.0ms | Allocations: 7925)
 
 
+Started GET "/memes/new" for ::1 at 2019-11-28 15:36:33 -0300
+  [1m[35m (5.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MemesController#new as HTML
+  Rendering memes/new.html.erb within layouts/application
+  Rendered memes/_form.html.erb (Duration: 60.5ms | Allocations: 5978)
+  Rendered memes/new.html.erb within layouts/application (Duration: 64.4ms | Allocations: 6409)
+  Rendered layouts/_bootstrap.html.erb (Duration: 1.6ms | Allocations: 88)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 189ms (Views: 158.2ms | ActiveRecord: 1.2ms | Allocations: 20103)
+
+
+Started GET "/memes" for ::1 at 2019-11-28 15:36:38 -0300
+Processing by MemesController#index as HTML
+  Rendering memes/index.html.erb within layouts/application
+  Rendered layouts/_bootstrap.html.erb (Duration: 0.1ms | Allocations: 6)
+  [1m[36mMeme Load (1.5ms)[0m  [1m[34mSELECT "memes".* FROM "memes"[0m
+  ↳ app/views/memes/index.html.erb:19
+  Rendered memes/index.html.erb within layouts/application (Duration: 6.9ms | Allocations: 1191)
+  Rendered layouts/_bootstrap.html.erb (Duration: 0.1ms | Allocations: 5)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 32ms (Views: 24.7ms | ActiveRecord: 1.5ms | Allocations: 5430)
+
+
+Started GET "/memes/2" for ::1 at 2019-11-28 15:36:44 -0300
+Processing by MemesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMeme Load (0.6ms)[0m  [1m[34mSELECT "memes".* FROM "memes" WHERE "memes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/memes_controller.rb:72:in `set_meme'
+  Rendering memes/show.html.erb within layouts/application
+  Rendered memes/show.html.erb within layouts/application (Duration: 4.1ms | Allocations: 328)
+  Rendered layouts/_bootstrap.html.erb (Duration: 0.0ms | Allocations: 6)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 57ms (Views: 27.2ms | ActiveRecord: 0.6ms | Allocations: 5841)
+
+
+Started GET "/" for ::1 at 2019-11-28 15:36:59 -0300
+Processing by MemesController#home as HTML
+  Rendering memes/home.html.erb within layouts/application
+  Rendered memes/home.html.erb within layouts/application (Duration: 3.4ms | Allocations: 82)
+  Rendered layouts/_bootstrap.html.erb (Duration: 0.1ms | Allocations: 6)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 29ms (Views: 27.3ms | ActiveRecord: 0.0ms | Allocations: 4234)
+
+
+Started GET "/" for ::1 at 2019-11-28 16:08:07 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MemesController#home as HTML
+  Rendering memes/home.html.erb within layouts/application
+  Rendered memes/home.html.erb within layouts/application (Duration: 1.8ms | Allocations: 84)
+  Rendered layouts/_bootstrap.html.erb (Duration: 0.8ms | Allocations: 91)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 61ms (Views: 59.2ms | ActiveRecord: 0.0ms | Allocations: 5997)
+
+
+Started GET "/memes" for ::1 at 2019-11-28 16:08:13 -0300
+Processing by MemesController#index as HTML
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (1.5ms)[0m  [1m[34mSELECT "memes".* FROM "memes"[0m
+  ↳ app/views/memes/index.html.erb:17
+  Rendered memes/index.html.erb within layouts/application (Duration: 17.4ms | Allocations: 5217)
+  Rendered layouts/_bootstrap.html.erb (Duration: 0.0ms | Allocations: 6)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 38ms (Views: 26.6ms | ActiveRecord: 1.5ms | Allocations: 9764)
+
+
+Started GET "/memes" for ::1 at 2019-11-28 16:08:30 -0300
+Processing by MemesController#index as HTML
+  Rendering memes/index.html.erb within layouts/application
+  [1m[36mMeme Load (0.7ms)[0m  [1m[34mSELECT "memes".* FROM "memes"[0m
+  ↳ app/views/memes/index.html.erb:17
+  Rendered memes/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 729)
+  Rendered layouts/_bootstrap.html.erb (Duration: 0.1ms | Allocations: 6)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 27ms (Views: 23.5ms | ActiveRecord: 0.7ms | Allocations: 4787)
+
+
